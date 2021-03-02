@@ -1,10 +1,8 @@
-//name
-const name = prompt("What is your name?");
-document.querySelector('.name').innerHTML = name;
+var name = localStorage.getItem("name");
 
+document.getElementsByTagName("span").innerHTML = name;
 
 // Selectors
-
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
