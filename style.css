@@ -145,3 +145,29 @@ select {
     pointer-events: none;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px){
+  *{
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    position: relative;
+    float: none;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    width: 50px;
+  }
+  .todo {
+    word-wrap: break-word;
+    white-space: initial;
+    text-overflow: ellipsis;
+    display: flex;
+  }
+  .completed-btn .deleted-btn {
+    width: 100%;
+  }
+}

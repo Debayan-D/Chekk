@@ -1,6 +1,5 @@
-var name = localStorage.getItem("name");
-
-document.getElementsByTagName("span").innerHTML = name;
+const name = window.prompt("Please enter your name: ")
+document.querySelector('.name').innerHTML = name;
 
 // Selectors
 const todoInput = document.querySelector('.todo-input');
